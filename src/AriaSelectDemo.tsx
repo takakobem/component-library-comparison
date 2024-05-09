@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import {Button, Label, ListBox, ListBoxItem, Popover, Select, SelectValue} from 'react-aria-components';
 import { ContainerContext } from './ContainerProvider';
 
-export const SelectDemo = () => {
+export const AriaSelectDemo = () => {
     const container = useContext(ContainerContext)!
     return <Select>
     <Label>Favorite Animal</Label>
