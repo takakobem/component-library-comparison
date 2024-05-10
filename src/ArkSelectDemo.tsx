@@ -1,5 +1,5 @@
 import { ChevronDownIcon } from 'lucide-react'
-import { Portal, Select, useEnvironmentContext } from '@ark-ui/react'
+import {  Portal, Select, useEnvironmentContext } from '@ark-ui/react'
 
 export const ArkSelectDemo = () => {
   const items = ['React', 'Solid', 'Vue']
@@ -16,7 +16,7 @@ export const ArkSelectDemo = () => {
         </Select.Trigger>
         <Select.ClearTrigger>Clear</Select.ClearTrigger>
       </Select.Control>
-      <Portal container={getRootNode().childNodes[0]}>
+      <Portal container={{current: getRootNode().childNodes[0]}}>
         <Select.Positioner>
           <Select.Content>
             <Select.ItemGroup id="ark-select">
